@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<input type="button" value="预览" onclick="preview()"/>
+
+<script type="text/javascript">
+	var preview = function(){
+		var newwindow = window.open("/pdfpreview/plugin/web/viewer.html?file=/pdfpreview/myServlet%3Fid%3D123");
+		setTimeout(() => {
+			newwindow.document.title="预览";
+		}, 1000);
+	}
+</script>
+
+</body>
+</html>
